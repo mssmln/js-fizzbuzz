@@ -7,24 +7,38 @@
 // Abbiamo visto qualcosa di particolare che possiamo usare?
 
 
-var message;
+// for (var i = 1; i <= 100; i++) {
+//
+//
+//   if ( (i % 3 == 0) && (i % 5 == 0) ) { // mettendolo in ultima posizione nel ciclo il numero 15 per esempio sarebbe stato solo Fizz e non FizzBuzz come deve essere
+//     console.log('FizzBuzz');
+//   } else if (i % 3 == 0) {
+//     console.log('Fizz');
+//   } else if (i % 5 == 0) {
+//     console.log('Buzz');
+//   } else {
+//     console.log(i);
+//   }
+// }
 
-for (var i = 1; i <= 100; i++) {
 
 
-  if (i % 3 == 0) {
+// while program version
+var i = 1;
+
+while (i <= 100) {
+
+
+  if ( (i % 3 == 0) && (i % 5 == 0) ) {
+    console.log('FizzBuzz');
+  } else if (i % 3 == 0) {
     console.log('Fizz');
   } else if (i % 5 == 0) {
     console.log('Buzz');
-  // } else if ( (i % 3 == 0) && (i % 5 == 0) ) {
-  //   console.log('FizzBuzz');
   } else {
     console.log(i);
   }
-}
 
 
-if ( (i % 3 == 0) && (i % 5 == 0) ) {
-  console.log('FizzBuzz');
-
+  i++;
 }
